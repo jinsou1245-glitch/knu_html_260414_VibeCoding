@@ -233,7 +233,6 @@ button {
 }
 
 .project-content {
-  display: block;
   width: 100%;
   overflow: hidden;
 }
@@ -243,68 +242,12 @@ button {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 2.5rem;
-  flex: 0 0 100%;
   min-width: 0;
-  transition: transform 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .intro-panel {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  background: var(--surface);
-  border-radius: 32px;
-  box-shadow: var(--shadow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(100%);
-  opacity: 1;
-  transition: transform 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
-  padding: 2rem;
-}
-
-.project-content.active .project-grid {
-  transform: translateX(-100%);
-}
-
-.project-content.active .intro-panel {
-  transform: translateX(0);
-}
-
-.slider-control {
-  height: fit-content;
-  align-self: center;
-}
-
-.intro-panel {
-  position: absolute;
-  inset: 0;
-  background: var(--surface);
-  border-radius: 32px;
-  box-shadow: var(--shadow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(-110%);
-  opacity: 0;
-  transition: transform 0.4s ease, opacity 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
-  pointer-events: none;
-  padding: 2rem;
-}
-
-.intro-panel.active {
-  transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.intro-panel.from-right {
-  transform: translateX(110%);
-}
-
-.intro-panel.from-right.active {
-  transform: translateX(0);
+  display: none;
 }
 
 .intro-content {
