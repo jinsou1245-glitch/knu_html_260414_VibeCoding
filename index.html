@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인 포트폴리오</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Jinso Portfolio</a>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero-section">
+      <div class="container">
+        <p class="eyebrow">안녕하세요, 저는 웹 개발을 배우는 학생입니다.</p>
+        <h1>깔끔하고 직관적인 웹 포트폴리오</h1>
+        <p class="hero-copy">
+          HTML, CSS, JavaScript로 만든 개인 포트폴리오입니다. 간단한 애니메이션과 반응형 레이아웃을 포함했습니다.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="button primary">프로젝트 보기</a>
+          <a href="#contact" class="button secondary">연락하기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Projects</p>
+          <h2>최근에 작업한 프로젝트</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>웹 포트폴리오</h3>
+            <p>나만의 소개와 프로젝트를 담은 반응형 포트폴리오 사이트.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Todo 앱</h3>
+            <p>할 일 추가, 삭제, 상태 변경이 가능한 심플한 Todo 앱.</p>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>DOM</span>
+              <span>UI</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+          </article>
+
+          <article class="project-card">
+            <h3>랜딩 페이지</h3>
+            <p>제품과 서비스를 소개하는 깔끔한 랜딩 페이지 템플릿.</p>
+            <div class="tags">
+              <span>Responsive</span>
+              <span>CSS Grid</span>
+              <span>Animation</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+          </article>
+
+          <article class="project-card">
+            <h3>기술 블로그</h3>
+            <p>기술 기록을 남기기 좋은 블로그 스타일 웹사이트 디자인.</p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Design</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Contact</p>
+          <h2>함께 이야기해봐요</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>이메일, 전화번호, 또는 링크드인을 통해 편하게 연락주세요.</p>
+            <ul>
+              <li><strong>이메일:</strong> jinso@example.com</li>
+              <li><strong>전화:</strong> 010-1234-5678</li>
+              <li><strong>LinkedIn:</strong> linkedin.com/in/jinso</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label>
+              이름
+              <input type="text" name="name" placeholder="이름을 입력하세요" required />
+            </label>
+            <label>
+              이메일
+              <input type="email" name="email" placeholder="이메일을 입력하세요" required />
+            </label>
+            <label>
+              메시지
+              <textarea name="message" rows="5" placeholder="간단한 메시지를 남겨주세요" required></textarea>
+            </label>
+            <button type="submit" class="button primary">보내기</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Jinso Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
