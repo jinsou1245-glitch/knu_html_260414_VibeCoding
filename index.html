@@ -15,6 +15,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="mode-toggle button secondary" type="button">Dark Mode</button>
       <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
     </div>
   </header>
@@ -22,14 +23,21 @@
   <main>
     <section id="home" class="section hero-section">
       <div class="container">
-        <p class="eyebrow">안녕하세요, 저는 웹 개발을 배우는 학생입니다.</p>
-        <h1>깔끔하고 직관적인 웹 포트폴리오</h1>
-        <p class="hero-copy">
-          HTML, CSS, JavaScript로 만든 개인 포트폴리오입니다. 간단한 애니메이션과 반응형 레이아웃을 포함했습니다.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="button primary">프로젝트 보기</a>
-          <a href="#contact" class="button secondary">연락하기</a>
+        <div class="hero-content">
+          <div class="hero-copy-group">
+            <p class="eyebrow">안녕하세요, 저는 웹 개발을 배우는 학생입니다.</p>
+            <h1>깔끔하고 직관적인 웹 포트폴리오</h1>
+            <p class="hero-copy">
+              HTML, CSS, JavaScript로 만든 개인 포트폴리오입니다. 간단한 애니메이션과 반응형 레이아웃을 포함했습니다.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="button primary">프로젝트 보기</a>
+              <a href="#contact" class="button secondary">연락하기</a>
+            </div>
+          </div>
+          <div class="hero-avatar">
+            <img src="hello.png" alt="프로필 사진" />
+          </div>
         </div>
       </div>
     </section>
@@ -41,50 +49,83 @@
           <h2>최근에 작업한 프로젝트</h2>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>웹 포트폴리오</h3>
-            <p>나만의 소개와 프로젝트를 담은 반응형 포트폴리오 사이트.</p>
-            <div class="tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
-          </article>
+        <div class="project-slider-wrap">
+          <div class="project-content">
+            <div class="project-grid">
+              <article class="project-card">
+                <h3>웹 포트폴리오</h3>
+                <p>나만의 소개와 프로젝트를 담은 반응형 포트폴리오 사이트.</p>
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <button type="button" class="toggle-image button secondary">이미지 보기</button>
+                <div class="project-image">
+                  <img src="hello.png" alt="웹 포트폴리오 이미지" />
+                </div>
+                <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+              </article>
 
-          <article class="project-card">
-            <h3>Todo 앱</h3>
-            <p>할 일 추가, 삭제, 상태 변경이 가능한 심플한 Todo 앱.</p>
-            <div class="tags">
-              <span>JavaScript</span>
-              <span>DOM</span>
-              <span>UI</span>
-            </div>
-            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
-          </article>
+              <article class="project-card">
+                <h3>Todo 앱</h3>
+                <p>할 일 추가, 삭제, 상태 변경이 가능한 심플한 Todo 앱.</p>
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>DOM</span>
+                  <span>UI</span>
+                </div>
+                <button type="button" class="toggle-image button secondary">이미지 보기</button>
+                <div class="project-image">
+                  <img src="hello.png" alt="Todo 앱 이미지" />
+                </div>
+                <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+              </article>
 
-          <article class="project-card">
-            <h3>랜딩 페이지</h3>
-            <p>제품과 서비스를 소개하는 깔끔한 랜딩 페이지 템플릿.</p>
-            <div class="tags">
-              <span>Responsive</span>
-              <span>CSS Grid</span>
-              <span>Animation</span>
-            </div>
-            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
-          </article>
+              <article class="project-card">
+                <h3>랜딩 페이지</h3>
+                <p>제품과 서비스를 소개하는 깔끔한 랜딩 페이지 템플릿.</p>
+                <div class="tags">
+                  <span>Responsive</span>
+                  <span>CSS Grid</span>
+                  <span>Animation</span>
+                </div>
+                <button type="button" class="toggle-image button secondary">이미지 보기</button>
+                <div class="project-image">
+                  <img src="hello.png" alt="랜딩 페이지 이미지" />
+                </div>
+                <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+              </article>
 
-          <article class="project-card">
-            <h3>기술 블로그</h3>
-            <p>기술 기록을 남기기 좋은 블로그 스타일 웹사이트 디자인.</p>
-            <div class="tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Design</span>
+              <article class="project-card">
+                <h3>기술 블로그</h3>
+                <p>기술 기록을 남기기 좋은 블로그 스타일 웹사이트 디자인.</p>
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Design</span>
+                </div>
+                <button type="button" class="toggle-image button secondary">이미지 보기</button>
+                <div class="project-image">
+                  <img src="hello.png" alt="기술 블로그 이미지" />
+                </div>
+                <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
+              </article>
             </div>
-            <a href="#" class="project-link" target="_blank" rel="noreferrer">바로가기</a>
-          </article>
+            <div class="intro-panel" aria-hidden="true">
+              <div class="intro-content">
+                <button type="button" class="close-intro button secondary">프로젝트 보기</button>
+                <p class="eyebrow">자기소개</p>
+                <h3>안녕하세요, 웹 개발자 Jinso입니다.</h3>
+                <p>저는 사용자 경험을 중요하게 생각하며, 깔끔한 인터페이스와 명확한 코드 구조를 지향합니다. 다양한 프로젝트를 통해 웹 개발 역량을 쌓고 있으며, 새로운 기능을 빠르게 배우고 적용하는 것을 즐깁니다.</p>
+                <ul>
+                  <li>HTML / CSS / JavaScript</li>
+                  <li>반응형 디자인</li>
+                  <li>사용자 중심 인터페이스</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
